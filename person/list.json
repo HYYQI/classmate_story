@@ -1,0 +1,10 @@
+[
+    {
+        "name": "person1",
+        "file": "person/p1.html"
+    },
+    {
+        "name": "person2",
+        "file": "person/p2.html"
+    }
+]

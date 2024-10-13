@@ -1,0 +1,39 @@
+/*  qi.phone.main.css
+    
+    HYYQI@github
+    phone website
+    
+    2024.10.12
+    2024.10.13
+*/
+
+@import url("qi.phone.style.css");/*导入特殊样式*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.bg_gray /*浅灰色背景*/ {
+    display: inline;/*宽度适配*/
+    background-color: rgba(139, 139, 139);
+}
+
+.flex {
+    display: flex;
+}
+
+.center /*文字居中*/ {
+    text-align: center;
+}
+
+.shadow /*影子*/ {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+

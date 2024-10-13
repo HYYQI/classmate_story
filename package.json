@@ -1,0 +1,22 @@
+{
+    "name": "classmate_stories",
+    "version": "1.0.0",
+    "description": "my project",
+    "main": "list.html",
+    "scripts": {
+        "lite": "lite-server --host localhost --port 80",
+        "start": "npm run lite"
+    },
+    "keywords": [
+        "node",
+        "example"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "lite-server": "^1.3.1"
+    },
+    "devDependencies": {
+        "lite-server": "^1.3.1"
+    }
+}
