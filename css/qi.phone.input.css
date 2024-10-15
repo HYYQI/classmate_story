@@ -12,18 +12,15 @@
     width: 240px;
     height: 42px;
     position: relative;
-    display: inline-block;
-    /* 使.label77表现得更像一个块级元素 */
+    overflow: hidden;
 }
 
 .inp77 {
-    width: 100%;
-    /* 使输入框宽度自适应其父元素 */
+    width: 240px;
     height: 42px;
     line-height: 42px;
     padding: 0 16px;
     padding-right: 42px;
-    /* 留出空间给搜索按钮 */
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
     box-sizing: border-box;
@@ -31,24 +28,15 @@
     font-size: 14px;
     border-radius: 21px;
     color: #333;
-    position: relative;
-    /* 修改为相对定位 */
+    position: absolute;
     list-style: none;
     outline-style: none;
 }
 
 .search-btn77 {
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 42px;
-    width: 42px;
-    /* 设置按钮的宽度 */
-    background: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    /* 移除焦点时的轮廓 */
+    top: 23px;
+    right: 35px;
 }
 
 .search-btn77:before {
@@ -59,9 +47,7 @@
     border-radius: 50%;
     display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: -14px;
     transition: border 0.32s linear;
 }
 
@@ -72,21 +58,23 @@
     background-color: rgba(0, 0, 0, 0.6);
     display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+    top: 3px;
+    right: -19px;
+    transform: rotate(-45deg);
     transition: background-color 0.32s linear;
 }
 
-.inp77:focus {
+.label77:hover.inp77,
+.inp77:focus,
+.inp77:valid {
     color: #000000;
     border: 1px solid rgba(29, 52, 202, 0.4);
 }
 
-.inp77:focus+.search-btn77:before {
+.inp77:valid+.search-btn77:before {
     border: 2px solid rgba(29, 52, 202, 1);
 }
 
-.inp77:focus+.search-btn77:after {
+.inp77:valid+.search-btn77:after {
     background-color: rgba(29, 52, 202, 1);
 }
