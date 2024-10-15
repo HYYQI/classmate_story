@@ -7,7 +7,7 @@ fetch('./person/list.json')
             personDiv.className = 'person';
 
             const personImage = document.createElement('img');
-            personImage.src = 'default-image.png'; // 设置统一的图像
+            personImage.src = 'src/img/person.png'; // 设置统一的图像
 
             const personName = document.createElement('div');
             personName.className = 'person-name';
@@ -18,7 +18,7 @@ fetch('./person/list.json')
             personLink.className = 'person-link';
 
             const linkImage = document.createElement('img');
-            linkImage.src = 'link-icon.png'; // 设置跳转的图标
+            linkImage.src = 'src/img/go.png'; // 设置跳转的图标
 
             personLink.appendChild(linkImage);
             personDiv.appendChild(personImage);
