@@ -13,14 +13,18 @@
     height: 42px;
     position: relative;
     overflow: hidden;
+    display: inline-block;
+    /* 使.label77表现得更像一个块级元素 */
 }
 
 .inp77 {
-    width: 240px;
+    width: 100%;
+    /* 使输入框宽度自适应其父元素 */
     height: 42px;
     line-height: 42px;
     padding: 0 16px;
     padding-right: 42px;
+    /* 留出空间给搜索按钮 */
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
     box-sizing: border-box;
@@ -35,8 +39,17 @@
 
 .search-btn77 {
     position: absolute;
-    top: 23px;
-    right: 35px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    /* 垂直居中按钮 */
+    cursor: pointer;
+    /* 显示指针手势 */
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    /* 移除焦点时的轮廓 */
 }
 
 .search-btn77:before {
@@ -64,17 +77,16 @@
     transition: background-color 0.32s linear;
 }
 
-.label77:hover.inp77,
-.inp77:focus,
-.inp77:valid {
+.label77:hover .inp77,
+.inp77:focus {
     color: #000000;
     border: 1px solid rgba(29, 52, 202, 0.4);
 }
 
-.inp77:valid+.search-btn77:before {
+.inp77:focus+.search-btn77:before {
     border: 2px solid rgba(29, 52, 202, 1);
 }
 
-.inp77:valid+.search-btn77:after {
+.inp77:focus+.search-btn77:after {
     background-color: rgba(29, 52, 202, 1);
 }
