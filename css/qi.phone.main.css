@@ -8,6 +8,7 @@
 */
 
 @import url("qi.phone.style.css");/*导入特殊样式*/
+@import url("qi.phone.input.css");/*导入输入框样式*/
 
 body {
     font-family: Arial, sans-serif;

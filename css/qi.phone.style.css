@@ -8,8 +8,6 @@
     2024.10.13
 */
 
-@import url("qi.phone.input.css");/*导入输入框样式*/
-
 .main_card {
     max-width: 600px;
     margin: auto;
