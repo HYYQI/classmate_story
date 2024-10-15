@@ -1,0 +1,92 @@
+/*  qi.phone.input.css
+    
+    HYYQI@github
+    phone website
+    项目特殊样式
+        --输入框，来自：设计师工作日常
+    
+    2024.10.16
+*/
+
+.label77 {
+    width: 240px;
+    height: 42px;
+    position: relative;
+    display: inline-block;
+    /* 使.label77表现得更像一个块级元素 */
+}
+
+.inp77 {
+    width: 100%;
+    /* 使输入框宽度自适应其父元素 */
+    height: 42px;
+    line-height: 42px;
+    padding: 0 16px;
+    padding-right: 42px;
+    /* 留出空间给搜索按钮 */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    font-size: 14px;
+    border-radius: 21px;
+    color: #333;
+    position: relative;
+    /* 修改为相对定位 */
+    list-style: none;
+    outline-style: none;
+}
+
+.search-btn77 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 42px;
+    width: 42px;
+    /* 设置按钮的宽度 */
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    /* 移除焦点时的轮廓 */
+}
+
+.search-btn77:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: border 0.32s linear;
+}
+
+.search-btn77:after {
+    content: '';
+    width: 2px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transition: background-color 0.32s linear;
+}
+
+.inp77:focus {
+    color: #000000;
+    border: 1px solid rgba(29, 52, 202, 0.4);
+}
+
+.inp77:focus+.search-btn77:before {
+    border: 2px solid rgba(29, 52, 202, 1);
+}
+
+.inp77:focus+.search-btn77:after {
+    background-color: rgba(29, 52, 202, 1);
+}
