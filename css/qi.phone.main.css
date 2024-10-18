@@ -4,7 +4,7 @@
     phone website
     
     2024.10.12
-    2024.10.13
+    2024.10.19
 */
 
 @import url("qi.phone.style.css");/*导入特殊样式*/
@@ -39,13 +39,13 @@ h1, h2, h3 {
 }
 
 .shadow /*影子*/ {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .normal {
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .small {
-    font-size: 16px;
+    font-size: 10px;
 }

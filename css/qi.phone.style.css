@@ -8,12 +8,14 @@
     2024.10.13
 */
 
+/* 通用 */
 .main_card {
     max-width: 600px;
     margin: auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
+
 }
 
 ul {
@@ -26,8 +28,10 @@ ul li {
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
+    transition: background-color 0.3s; /* 添加过渡效果 */
 }
 
+/* list.html */
 .person {
     display: flex;
     align-items: center;
@@ -36,8 +40,8 @@ ul li {
 }
 
 .person img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     margin-right: 10px;
 }
 
@@ -46,6 +50,11 @@ ul li {
 }
 
 .person-link img {
-    width: 24px;
-    height: 24px;
+    width: 43px;
+    height: 22px;
+}
+
+/* peerson_name.html */
+.emoji {
+    max-width: 400px;
 }

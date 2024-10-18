@@ -19,6 +19,8 @@ fetch('./person/list.json')
 
             const linkImage = document.createElement('img');
             linkImage.src = 'src/img/go.png'; // 设置跳转的图标
+            linkImage.width = 43; // 设置图像宽度
+            linkImage.height = 22; // 设置图像高度
 
             personLink.appendChild(linkImage);
             personDiv.appendChild(personImage);

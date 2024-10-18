@@ -1,10 +1,30 @@
 [
     {
-        "name": "person1",
-        "file": "person/p1.html"
+        "name": "王金昊",
+        "file": "person/wangjinhao.html"
     },
     {
-        "name": "person2",
-        "file": "person/p2.html"
+        "name": "，张旭博",
+        "file": "person/zhangxvbo.html"
+    },
+    {
+        "name": "姚印浩",
+        "file": "person/yaoyinhao.html"
+    },
+    {
+        "name": "",
+        "file": "person/.html"
+    },
+    {
+        "name": "",
+        "file": "person/.html"
+    },
+    {
+        "name": "",
+        "file": "person/.html"
+    },
+    {
+        "name": "person --示例代码",
+        "file": "person/person-code.html"
     }
 ]
