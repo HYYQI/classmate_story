@@ -28,7 +28,8 @@ ul li {
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
-    transition: background-color 0.3s; /* 添加过渡效果 */
+    transition: background-color 0.3s;
+    /* 添加过渡效果 */
 }
 
 /* list.html */
@@ -58,4 +59,55 @@ ul li {
 .emoji {
     width: 80%;
     max-width: 400px;
+}
+
+/* Video Player Styles */
+.video-container {
+    max-width: 600px;
+    /* Maximum width of the video container */
+    margin: 40px auto;
+    /* Center the video container */
+    background: white;
+    /* Background color of the video container */
+    padding: 20px;
+    /* Padding around the video */
+    border-radius: 10px;
+    /* Rounded corners for the video container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for the video container */
+}
+
+video {
+    width: 100%;
+    /* Video width will take full width of the container */
+    height: auto;
+    /* Video height will adjust based on aspect ratio */
+    border-radius: 5px;
+    /* Rounded corners for the video */
+}
+
+/* Play button styles */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.play-icon {
+    width: 40px;
+    height: 40px;
 }

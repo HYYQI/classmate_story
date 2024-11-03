@@ -1,0 +1,61 @@
+/*  qi.phone.style.css
+    
+    HYYQI@github
+    phone website
+    项目特殊样式
+    
+    2024.10.12
+    2024.10.13
+*/
+
+/* 通用 */
+.main_card {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e0e4f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* 添加过渡效果 */
+}
+
+/* list.html */
+.person {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.person img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.person-name {
+    flex-grow: 1;
+}
+
+.person-link img {
+    width: 43px;
+    height: 22px;
+}
+
+/* peerson_name.html */
+.emoji {
+    width: 80%;
+    max-width: 400px;
+}
